@@ -80,7 +80,6 @@ def make_map(df):
     HeatMap(df[["lat", "lng"]].values.tolist(), radius=10, blur=15).add_to(m)
     return m
 
-
 def plot_trend(df):
     if not isinstance(df.index, pd.DatetimeIndex):
         return None
